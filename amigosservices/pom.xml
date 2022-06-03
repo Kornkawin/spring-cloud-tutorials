@@ -12,6 +12,7 @@
     <modules>
         <!-- subproject -->
         <module>customer</module>
+        <module>fraud</module>
     </modules>
 
     <name>amigosservices</name>
