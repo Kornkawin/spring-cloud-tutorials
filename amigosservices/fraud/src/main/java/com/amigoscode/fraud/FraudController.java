@@ -1,17 +1,14 @@
 package com.amigoscode.fraud;
 
+import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("api/v1/fraud-check")
+@AllArgsConstructor
 public class FraudController {
 
     private final FraudCheckService fraudCheckService;
-
-    // constructor
-    public FraudController(FraudCheckService fraudCheckService) {
-        this.fraudCheckService = fraudCheckService;
-    }
 
     // GET method with one request parameter
     @GetMapping(path = "{customerId}")
